@@ -42,7 +42,7 @@ public class AbstractDDPlus {
 
 		if (testResultC1 == FAIL) {
 			return ddAux(c1, r, dto);
-		} else if (testResultC1 == FAIL) {
+		} else if (testResultC2 == FAIL) {
 			return ddAux(c2, r, dto);
 		} else if (testResultC1 == UNRESOLVED || testResultC2 == UNRESOLVED) {
 			// Transition to Algorithm 2 if an unresolved case is encountered

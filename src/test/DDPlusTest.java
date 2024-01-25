@@ -6,6 +6,8 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import alloy.IDDPlusTest;
 import dto.DataTransportObject;
@@ -86,9 +88,12 @@ public class DDPlusTest<E> implements IDDPlusTest {
 			Func funcPredicate = (Func) predicates.get(i);
 			String[] elementsNamePredicate = funcPredicate.label.toString().split("/");
 			String namePredicate = elementsNamePredicate[elementsNamePredicate.length - 1];
-			String regex = "^pred\\s+" + namePredicate + "\\s*(?:\\[[^\\]]*\\])?\\s*\\{[^{}]*}$";
-			if (line.matches(regex)) {
+			String regex = "\\bpred\\s+" + namePredicate + "\\s*\\(([^)]*)\\)\\s*\\{";
+			Pattern pattern = Pattern.compile(regex, Pattern.DOTALL);
+			Matcher matcher = pattern.matcher(line);
+			if (matcher.find()) {
 				isPredicateToDelete = true;
+				break;
 			}
 		}
 		return isPredicateToDelete;
