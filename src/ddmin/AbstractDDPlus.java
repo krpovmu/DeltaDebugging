@@ -9,9 +9,9 @@ import test.DDPlusTest;
 
 public class AbstractDDPlus {
 
-//	private static final Random random = new Random();
-	private static IDDPlusTest checkAlloy =  new DDPlusTest();
-//	private static DDPlusTest checkClass = new DDPlusTest();
+	// private static final Random random = new Random();
+	private static IDDPlusTest checkAlloy = new DDPlusTest();
+	// private static DDPlusTest checkClass = new DDPlusTest();
 	public static final int PASS = 1;
 	public static final int FAIL = -1;
 	public static final int UNRESOLVED = 0;
@@ -90,7 +90,8 @@ public class AbstractDDPlus {
 		List<List<Object>> subsets = partitionIntoNSubsets(input, n);
 		List<Object> cPrime = new ArrayList<>();
 		List<Object> rPrime = new ArrayList<>(r);
-		int nPrime = Math.min(cPrime.size(), 2 * n);
+		// int nPrime = Math.min(cPrime.size(), 2 * n);
+		int nPrime;
 
 		for (List<Object> ci : subsets) {
 			List<Object> ciUnionR = new ArrayList<>(ci);
@@ -105,11 +106,14 @@ public class AbstractDDPlus {
 				zi.removeAll(ci);
 				zi.addAll(r);
 				int tiPrime = checkAlloy.check(zi, input, dto);
-				if (ti == PASS) {
+				if (tiPrime == PASS) {
 					cPrime.addAll(ci);
 				}
 			}
 		}
+
+		nPrime = Math.min(cPrime.size(), 2 * n);
+		rPrime.addAll(cPrime);
 
 		if (!cPrime.isEmpty()) {
 			return dd3(cPrime, rPrime, dto, nPrime); // Preference

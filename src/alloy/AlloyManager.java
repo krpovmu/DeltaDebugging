@@ -30,7 +30,7 @@ public class AlloyManager<E> {
 			Namespace res = parser.parseArgs(args);
 			DataTransportObject dto = new DataTransportObject();
 			dto.setFilePath(res.getString("input"));
-			dto.setCoreType((res.getBoolean("facts")) ? "facts" : (res.getBoolean("predicates")) ? "predicates" : "choice something perejil");
+			dto.setCoreType((res.getBoolean("facts")) ? "facts" : (res.getBoolean("predicates")) ? "predicates" : "choose something perejil");
 			dto.setReporter();
 			dto.setOptions();
 			dto.setModule(dto.getReporter(), dto.getFilePath());
@@ -39,11 +39,11 @@ public class AlloyManager<E> {
 			LinkedHashMap<String, Object> factsAndpredicates = new LinkedHashMap<String, Object>();
 			AbstractDDPlus ddplus = new AbstractDDPlus();
 
-			System.out.println(dto.getFilePath());
+			// System.out.println(dto.getFilePath());
 			if (validateFile(dto.getFilePath())) {
 
 				factsAndpredicates = getFactsOrPredicates(dto);
-				System.out.println(factsAndpredicates);
+				// System.out.println(factsAndpredicates);
 
 				if (!factsAndpredicates.isEmpty()) {
 					for (Map.Entry<String, Object> element : factsAndpredicates.entrySet()) {
@@ -59,14 +59,14 @@ public class AlloyManager<E> {
 						System.out.println("=============");
 						System.out.println("\n" + printCore(cores));
 						System.out.println("=============");
+
 					}
 				} else {
-					System.out.println("There are not elements to analyze, have a good day :P");
+					System.out.println("There are not elements to analyze, have a good day");
 				}
 			} else {
-				System.out.println("Invalid :P");
+				System.out.println("Invalid");
 			}
-
 		} catch (ArgumentParserException e) {
 			parser.handleError(e);
 		}
