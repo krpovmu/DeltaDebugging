@@ -1,6 +1,7 @@
 package ddmin;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import alloy.IDDPlusTest;
@@ -9,9 +10,7 @@ import test.DDPlusTest;
 
 public class AbstractDDPlus {
 
-	// private static final Random random = new Random();
 	private static IDDPlusTest checkAlloy = new DDPlusTest();
-	// private static DDPlusTest checkClass = new DDPlusTest();
 	public static final int PASS = 1;
 	public static final int FAIL = -1;
 	public static final int UNRESOLVED = 0;
@@ -112,11 +111,11 @@ public class AbstractDDPlus {
 			}
 		}
 
-		nPrime = Math.min(cPrime.size(), 2 * n);
-		rPrime.addAll(cPrime);
-
 		if (!cPrime.isEmpty()) {
-			return dd3(cPrime, rPrime, dto, nPrime); // Preference
+			nPrime = Math.min(cPrime.size(), 2 * n);
+			rPrime.addAll(cPrime);
+			List<Object> complementcPrime = difference(input, cPrime);
+			return dd3(complementcPrime, rPrime, dto, nPrime); // Preference
 		} else if (n < input.size()) {
 			return dd3(input, r, dto, input.size()); // Try again
 		}
@@ -136,42 +135,10 @@ public class AbstractDDPlus {
 		return subsets;
 	}
 
-//	private static String test(List<Object> c) {
-//		int outcome = random.nextInt(3); // Randomly choose an outcome
-//		switch (outcome) {
-//		case 0:
-//			return "d"; // Pass
-//		case 1:
-//			return "X"; // Fail
-//		case 2:
-//			return "?"; // Unresolved
-//		default:
-//			return "d";
-//		}
-//	}
-
-//	public static void main(String[] args) {
-//		// Example usage for both algorithms
-//		List<Object> initialList = new ArrayList<>();
-//		// Add elements to initialList
-//		for (int i = 1; i <= 10; i++) {
-//			initialList.add(i);
-//		}
-//
-//		// Using Algorithm 1
-//		System.out.println("Testing with Algorithm 1:");
-//		List<Object> result1 = dd(initialList);
-//		System.out.println("Result: " + result1);
-//
-//		// Resetting list for Algorithm 2
-//		initialList.clear();
-//		for (int i = 1; i <= 10; i++) {
-//			initialList.add(i);
-//		}
-//
-//		// Using Algorithm 2
-//		System.out.println("Testing with Algorithm 2:");
-//		List<Object> result2 = ddPlus(initialList);
-//		System.out.println("Result: " + result2);
-//	}
+	private static List<Object> difference(List<Object> a, List<Object> b) {
+		List<Object> result = new LinkedList<Object>();
+		result.addAll(a);
+		result.removeAll(b);
+		return result;
+	}
 }

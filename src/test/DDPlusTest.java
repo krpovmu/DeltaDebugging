@@ -24,7 +24,6 @@ public class DDPlusTest<E> implements IDDPlusTest {
 	public static final int FAIL = -1;
 	public static final int UNRESOLVED = 0;
 
-	@Override
 	public int check(List<Object> chunk, List<Object> input, DataTransportObject dto) {
 		A4Solution ans = null;
 		int result = FAIL;
@@ -39,7 +38,6 @@ public class DDPlusTest<E> implements IDDPlusTest {
 			try {
 				String modelWithJustThePredicateToEvaluate = removePredicates((List<E>) chunk, (List<E>) input, dto.getFilePath());
 				dto.setModulePred(dto.getReporter(), modelWithJustThePredicateToEvaluate);
-				// Module module = dto.getModule();
 				ans = TranslateAlloyToKodkod.execute_command(dto.getReporter(), dto.getModule().getAllReachableSigs(), dto.getModule().getAllCommands().get(0), dto.getOptions());
 			} catch (Exception e) {
 				result = UNRESOLVED;
@@ -51,6 +49,9 @@ public class DDPlusTest<E> implements IDDPlusTest {
 			result = UNRESOLVED;
 		} else if (ans.satisfiable()) {
 			result = PASS;
+		}
+		if (dto.isTrace()) {
+			System.out.println(dto.printCoreAsNumber(chunk, result));
 		}
 		return result;
 	}

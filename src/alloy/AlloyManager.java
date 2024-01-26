@@ -25,6 +25,7 @@ public class AlloyManager<E> {
 		parser.addArgument("-i", "--input").required(true).help("The file to process");
 		parser.addArgument("-f", "--facts").action(Arguments.storeTrue()).help("Analize errors in the model related with facts");
 		parser.addArgument("-p", "--predicates").action(Arguments.storeTrue()).help("Analize errors in the model related with predicates");
+		parser.addArgument("-t", "--trace").action(Arguments.storeTrue()).help("Print all analisis stack");
 
 		try {
 			Namespace res = parser.parseArgs(args);
@@ -35,6 +36,7 @@ public class AlloyManager<E> {
 			dto.setOptions();
 			dto.setModule(dto.getReporter(), dto.getFilePath());
 			dto.setCommand(dto.getModule());
+			dto.setTrace(res.getBoolean("trace"));
 
 			LinkedHashMap<String, Object> factsAndpredicates = new LinkedHashMap<String, Object>();
 			AbstractDDPlus ddplus = new AbstractDDPlus();
@@ -51,14 +53,18 @@ public class AlloyManager<E> {
 						List<Object> valuesList = (List<Object>) element.getValue();
 
 						if (!valuesList.isEmpty()) {
-							cores = ddplus.dd(valuesList, dto);
+							if (dto.isTrace()) {
+								dto.sortList(valuesList);
+								dto.printNumericalOrderedList();
+							}
+							cores = AbstractDDPlus.dd(valuesList, dto);
 						} else {
 							System.out.println("Empty List Of " + element.getKey());
 						}
 
-						System.out.println("=============");
+						System.out.println("=======================");
 						System.out.println("\n" + printCore(cores));
-						System.out.println("=============");
+						System.out.println("=======================");
 
 					}
 				} else {
