@@ -1,29 +1,37 @@
-# Java related
-target/**
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
 *.jar
 *.war
 *.ear
-*.class
 
-# eclipse specific
-*.pydevproject
-.project
-.metadata
-bin/**
-tmp/**
-tmp/**/*
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Eclipse
 .classpath
+.project
 .settings/
-.loadpath
 
-# External tool builders
-.externalToolBuilders/
+# Intellij
+.idea/
+*.iml
+*.iws
 
-# Locally stored "Eclipse launch configurations"
-*.launch
-/bin/
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+
+# Inclusions
+!lib/**
+
+# Compiled Files
+*.class
+bin/
+build/
+/bin1/
+java/build/**
