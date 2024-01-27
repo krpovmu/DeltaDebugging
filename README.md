@@ -20,23 +20,13 @@ Implemented in Java, this project faithfully represents the algorithms as outlin
 
 ### Directory Structure
 
-DeltaDebugging/
-|-- src/
-| |-- DeltaDebugging.java
-|-- test/
-|-- DeltaDebuggingTest.java
-
-
-DeltaDebugging
-├── alloy
-│   ├── AlloyManager.java
-│   └── IDDPlusTest.java
-├── ddmin
-│   └── AbstractDDPlus.java
-├── dto
-│   └── DataTransportObject.java
-└── test
-    └── DDPlusTest.java
-
-
-
+* [src](./src)
+  * [test](./src/test)
+    * [DDPlusTest.java](./src/test/DDPlusTest.java)
+  * [alloy](./src/alloy)
+    * [IDDPlusTest.java](./src/alloy/IDDPlusTest.java)
+    * [AlloyManager.java](./src/alloy/AlloyManager.java)
+  * [dto](./src/dto)
+    * [DataTransportObject.java](./src/dto/DataTransportObject.java)
+  * [ddmin](./src/ddmin)
+  * [AbstractDDPlus.java](./src/ddmin/AbstractDDPlus.java)
