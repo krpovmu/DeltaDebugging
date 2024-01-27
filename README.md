@@ -20,6 +20,13 @@ Implemented in Java, this project faithfully represents the algorithms as outlin
 
 ### Directory Structure
 
+DeltaDebugging/
+|-- src/
+| |-- DeltaDebugging.java
+|-- test/
+|-- DeltaDebuggingTest.java
+
+
 DeltaDebugging
 ├── alloy
 │   ├── AlloyManager.java
