@@ -118,7 +118,7 @@ public class DataTransportObject {
 
 	public String printCoreAsNumber(List<Object> input, int checkResult) {
 		List<Integer> coreId = elementsToID(input, this.listWithIds);
-		return "List : " + coreId + " Result: " + ((checkResult == 1) ? "PASS" : (checkResult == 0) ? "UNRESOLVED" : "FAIL");
+		return "Step : " + coreId + " Result: " + ((checkResult == 1) ? "PASS" : (checkResult == 0) ? "UNRESOLVED" : "FAIL");
 	}
 
 	public List<Integer> elementsToID(List<Object> input, Map<Integer, Object> sortedList) {

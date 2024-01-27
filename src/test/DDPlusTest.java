@@ -90,6 +90,7 @@ public class DDPlusTest<E> implements IDDPlusTest {
 			String[] elementsNamePredicate = funcPredicate.label.toString().split("/");
 			String namePredicate = elementsNamePredicate[elementsNamePredicate.length - 1];
 			String regex = "\\bpred\\s+" + namePredicate + "\\s*\\(([^)]*)\\)\\s*\\{";
+			// String regex = "\\bpred\\s+" + namePredicate + "\\s*\\(([^)]*)\\)\\s*\\{.*?\\}";
 			Pattern pattern = Pattern.compile(regex, Pattern.DOTALL);
 			Matcher matcher = pattern.matcher(line);
 			if (matcher.find()) {
