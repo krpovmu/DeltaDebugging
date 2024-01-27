@@ -22,6 +22,15 @@ public class DataTransportObject {
 	String coreType = new String();
 	boolean trace = false;
 	Map<Integer, Object> listWithIds = new HashMap<>();
+	int step = 0;
+
+	public int getStep() {
+		return step;
+	}
+
+	public void setStep() {
+		this.step++;
+	}
 
 	public boolean isTrace() {
 		return trace;
@@ -85,7 +94,7 @@ public class DataTransportObject {
 
 	public void printNumericalOrderedList() {
 
-		//this.listWithIds = sortList(list);
+		// this.listWithIds = sortList(list);
 
 		System.out.println("=======================");
 		System.out.println("ID : Element");
@@ -118,7 +127,7 @@ public class DataTransportObject {
 
 	public String printCoreAsNumber(List<Object> input, int checkResult) {
 		List<Integer> coreId = elementsToID(input, this.listWithIds);
-		return "Step : " + coreId + " Result: " + ((checkResult == 1) ? "PASS" : (checkResult == 0) ? "UNRESOLVED" : "FAIL");
+		return "Iteration "+ this.getStep() +" : " + coreId + " Result: " + ((checkResult == 1) ? "PASS" : (checkResult == 0) ? "UNRESOLVED" : "FAIL");
 	}
 
 	public List<Integer> elementsToID(List<Object> input, Map<Integer, Object> sortedList) {

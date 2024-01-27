@@ -51,6 +51,7 @@ public class DDPlusTest<E> implements IDDPlusTest {
 			result = PASS;
 		}
 		if (dto.isTrace()) {
+			dto.setStep();
 			System.out.println(dto.printCoreAsNumber(chunk, result));
 		}
 		return result;

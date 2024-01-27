@@ -1,9 +1,9 @@
 # DeltaDebugging Alloy
 
-# Implementation of Automated Delta Debugging Algorithm to find MUS on Alloy Models
+# Implementation of Automated Delta Debugging Algorithm to find MUS on Unsat Alloy Models
 
 ## Overview
-This repository contains the Java implementation of the Automated Delta Debugging Algorithm, as described in the academic paper titled "[Yesterday, My Program Worked. Today, It Does Not, Why?]". This algorithm focuses on isolating the minimal failure-inducing input in a Alloy model.
+This repository contains the Java implementation of the Automated Delta Debugging Algorithm, as described in the academic paper titled "[Yesterday, My Program Worked. Today, It Does Not, Why?]". This algorithm focuses on isolating the minimal failure-inducing input in an unsat alloy model.
 
 ## Authors of the Paper
 - [Andreas Zeller]
@@ -19,14 +19,45 @@ Implemented in Java, this project faithfully represents the algorithms as outlin
 - Handling of unresolved test cases in the extended algorithm.
 
 ### Directory Structure
-
 * [src](./src)
-  * [test](./src/test)
-    * [DDPlusTest.java](./src/test/DDPlusTest.java)
   * [alloy](./src/alloy)
     * [IDDPlusTest.java](./src/alloy/IDDPlusTest.java)
     * [AlloyManager.java](./src/alloy/AlloyManager.java)
-  * [dto](./src/dto)
-    * [DataTransportObject.java](./src/dto/DataTransportObject.java)
   * [ddmin](./src/ddmin)
     * [AbstractDDPlus.java](./src/ddmin/AbstractDDPlus.java)
+  * [dto](./src/dto)
+    * [DataTransportObject.java](./src/dto/DataTransportObject.java)
+  * [test](./src/test)
+    * [DDPlusTest.java](./src/test/DDPlusTest.java)
+
+## Contributing
+
+Contributions to this project are welcome! If you have suggestions for improvements or want to contribute code:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your updates (`git commit -am 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Create a new Pull Request.
+
+## License
+
+This project is licensed under the [Your License Name Here] - see the LICENSE file in this repository for details.
+
+## References
+
+For detailed information and background theory, please refer to the following sources:
+
+- [Original Paper Title](link-to-the-paper)
+- Additional resources or references...
+
+## Contact
+
+For any questions or suggestions regarding this project, please feel free to contact me:
+
+- Email: [your-email@example.com]
+- LinkedIn: [your-linkedin-profile-link]
+- GitHub: [@YourGitHubUsername](https://github.com/YourGitHubUsername)
+
+
