@@ -29,4 +29,4 @@ Implemented in Java, this project faithfully represents the algorithms as outlin
   * [dto](./src/dto)
     * [DataTransportObject.java](./src/dto/DataTransportObject.java)
   * [ddmin](./src/ddmin)
-  * [AbstractDDPlus.java](./src/ddmin/AbstractDDPlus.java)
+    * [AbstractDDPlus.java](./src/ddmin/AbstractDDPlus.java)
