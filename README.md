@@ -1,63 +1,104 @@
-# DeltaDebugging Alloy
-
-# Implementation of Automated Delta Debugging Algorithm to find MUS on Unsat Alloy Models
+# Delta Debugging for Alloy Models
 
 ## Overview
-This repository contains the Java implementation of the Automated Delta Debugging Algorithm, as described in the academic paper titled "[Yesterday, My Program Worked. Today, It Does Not, Why?]". This algorithm focuses on isolating the minimal failure-inducing input in an unsat alloy model.
 
-## Authors of the Paper
-- [Andreas Zeller]
+This Java project implements a delta debugging algorithm tailored for analyzing and isolating faults in Alloy models. It's composed of several key components that work together to minimize the input data causing test failures in Alloy models.
 
-## Key Concepts
-The paper presents an innovative approach to debugging, which involves:
-- Minimizing the input data set that causes a test to fail.
-- Recursive strategies for isolating the source of faults.
+## Key Components
 
-## Implementation Details
-Implemented in Java, this project faithfully represents the algorithms as outlined in the paper. It includes:
-- Recursive partitioning of input data.
-- Handling of unresolved test cases in the extended algorithm.
+- `AlloyManager`: The main class that serves as the entry point of the application. It handles command-line arguments and orchestrates the overall debugging process.
+- `AbstractDDPlus`: This class implements the core logic of the delta debugging algorithms, providing methods for both the basic and extended versions of delta debugging.
+- `DDPlusTest`: Implements the `IDDPlusTest` interface, providing the testing logic specific to Alloy models.
 
-### Directory Structure
-* [src](./src)
-  * [alloy](./src/alloy)
-    * [IDDPlusTest.java](./src/alloy/IDDPlusTest.java)
-    * [AlloyManager.java](./src/alloy/AlloyManager.java)
-  * [ddmin](./src/ddmin)
-    * [AbstractDDPlus.java](./src/ddmin/AbstractDDPlus.java)
-  * [dto](./src/dto)
-    * [DataTransportObject.java](./src/dto/DataTransportObject.java)
-  * [test](./src/test)
-    * [DDPlusTest.java](./src/test/DDPlusTest.java)
+## Setup and Installation
+
+### Prerequisites
+
+- Java JDK 11 or higher installed.
+- An IDE such as IntelliJ IDEA or Eclipse (optional but recommended for ease of development).
+
+### Installation Steps
+
+1. Clone the GitHub repository:
+   ```bash
+   git clone https://github.com/your-github-repository-url.git
+   cd path-to-your-project
+
+2. If using an IDE, import the project into your IDE of choice.
+3. Ensure that Java JDK 11 or higher is set as the project's SDK.
+
+## Running the Application
+
+To run the `AlloyManager` class and start the delta debugging process, follow these steps:
+
+1. Navigate to the `AlloyManager` class in your IDE or command line interface.
+2. Execute the `main` method, providing necessary command-line arguments:
+   - `-i` or `--input`: Specifies the path to the Alloy model file.
+   - `-f` or `--facts`: Opt to analyze errors related to facts in the model.
+   - `-p` or `--predicates`: Opt to analyze errors related to predicates in the model.
+   - `-t` or `--trace`: Enable trace logging for detailed analysis output.
+
+   **Example Command:**
+   ```bash
+   java -jar your-jar-file.jar --input "path/to/alloy-model.als" --facts
+
+## Usage
+
+This section provides detailed instructions on how to use the application. Follow these steps to run different modes and utilize various options:
+
+1. **Facts Analysis Mode**:
+   - Use this mode to analyze errors related to facts in the Alloy model.
+   - Example command:
+     ```bash
+     java -jar your-jar-file.jar --input "path/to/alloy-model.als" --facts
+     ```
+
+2. **Predicates Analysis Mode**:
+   - Use this mode to analyze errors related to predicates in the model.
+   - Example command:
+     ```bash
+     java -jar your-jar-file.jar --input "path/to/alloy-model.als" --predicates
+     ```
+
+3. **Trace Logging**:
+   - Enable trace logging to get detailed analysis output.
+   - Example command:
+     ```bash
+     java -jar your-jar-file.jar --input "path/to/alloy-model.als" --trace
+     ```
+Adjust the command-line arguments as per your requirements to analyze different aspects of the Alloy model.
 
 ## Contributing
 
-Contributions to this project are welcome! If you have suggestions for improvements or want to contribute code:
+We encourage contributions to this project. If you'd like to contribute, please follow these steps:
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your updates (`git commit -am 'Add some feature'`).
-5. Push to the branch (`git push origin feature-branch`).
-6. Create a new Pull Request.
+1. **Fork the Repository**:
+   - Create a fork of the main repository on your GitHub account.
+
+2. **Create a Feature Branch**:
+   - `git checkout -b feature-branch`
+
+3. **Commit Your Changes**:
+   - Make your changes and commit them: `git commit -am 'Add some feature'`
+
+4. **Push to the Branch**:
+   - `git push origin feature-branch`
+
+5. **Open a Pull Request**:
+   - Go to the original repository and open a pull request from your feature branch.
+
+## Documentation
+
+For detailed information about the algorithms and methodologies used in this project, refer to the `docs` directory within the repository.
 
 ## License
 
-This project is licensed under the [Your License Name Here] - see the LICENSE file in this repository for details.
-
-## References
-
-For detailed information and background theory, please refer to the following sources:
-
-- [Original Paper Title](link-to-the-paper)
-- Additional resources or references...
+This project is licensed under [Your License Name Here]. See the LICENSE.md file in the repository for detailed terms and conditions.
 
 ## Contact
 
-For any questions or suggestions regarding this project, please feel free to contact me:
+For any inquiries or further discussion about the project, please reach out to:
 
-- Email: [your-email@example.com]
-- LinkedIn: [your-linkedin-profile-link]
-- GitHub: [@YourGitHubUsername](https://github.com/YourGitHubUsername)
-
-
+- **Email**: [your-email@example.com]
+- **LinkedIn**: [your-linkedin-profile-link]
+- **GitHub Profile**: [@YourGitHubUsername](https://github.com/YourGitHubUsername)

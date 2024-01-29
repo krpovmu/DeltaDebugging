@@ -1,0 +1,50 @@
+@startuml
+package alloy {
+   class AlloyManager {
+      +{static} void main(String[] args)
+      +{static} LinkedHashMap<String, Object> getFactsOrPredicates(DataTransportObject)
+      +{static} String printCore(List<Object>)
+      +{static} boolean validateFile(String)
+   }
+}
+
+package ddmin {
+   class AbstractDDPlus {
+      -{static} IDDPlusTest checkAlloy
+      +{static} final int PASS
+      +{static} final int FAIL
+      +{static} final int UNRESOLVED
+      +{static} List<Object> dd(List<Object>, DataTransportObject)
+      -{static} List<Object> ddAux(List<Object>, List<Object>, DataTransportObject)
+      -{static} List<List<Object>> partitionIntoTwoSubsets(List<Object>)
+      -{static} List<Object> ddPlus(List<Object>, DataTransportObject)
+      -{static} List<Object> dd3(List<Object>, List<Object>, DataTransportObject, int)
+      -{static} List<List<Object>> partitionIntoNSubsets(List<Object>, int)
+      -{static} List<Object> difference(List<Object>, List<Object>)
+   }
+}
+
+package test {
+   class DDPlusTest {
+      +{static} final int PASS
+      +{static} final int FAIL
+      +{static} final int UNRESOLVED
+      +int check(List<Object>, List<Object>, DataTransportObject)
+      -List<E> difference(List<E>, List<E>)
+      -Expr assemble(List<E>)
+      -String removePredicates(List<E>, List<E>, String)
+      -boolean lineIsPredicateToDelete(List<E>, String)
+   }
+}
+
+interface alloy.IDDPlusTest {
+   +int check(List<Object>, List<Object>, DataTransportObject)
+}
+
+DDPlusTest --|> alloy.IDDPlusTest
+AbstractDDPlus ..> alloy.IDDPlusTest : uses >
+AlloyManager ..> ddmin.AbstractDDPlus : uses >
+AlloyManager ..> dto.DataTransportObject : uses >
+DDPlusTest ..> dto.DataTransportObject : uses >
+@enduml
+
