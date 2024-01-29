@@ -10,6 +10,10 @@ This Java project implements a delta debugging algorithm tailored for analyzing 
 - `AbstractDDPlus`: This class implements the core logic of the delta debugging algorithms, providing methods for both the basic and extended versions of delta debugging.
 - `DDPlusTest`: Implements the `IDDPlusTest` interface, providing the testing logic specific to Alloy models.
 
+## Uml Model
+
+![uml diagram](./uml-diagram.png)
+
 ## Setup and Installation
 
 ### Prerequisites
