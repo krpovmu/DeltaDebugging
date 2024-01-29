@@ -65,10 +65,10 @@ This section provides detailed instructions on how to use the application. Follo
      ```
 
 3. **Trace Logging**:
-   - Enable trace logging to get detailed analysis output.
+   - Enable trace logging to get detailed analysis output, you can use either on facts or predicates.
    - Example command:
      ```bash
-     java -jar your-jar-file.jar --input "path/to/alloy-model.als" --trace
+     java -jar your-jar-file.jar --input "path/to/alloy-model.als" --trace --facts
      ```
 Adjust the command-line arguments as per your requirements to analyze different aspects of the Alloy model.
 
