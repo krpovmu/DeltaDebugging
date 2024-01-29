@@ -103,6 +103,4 @@ This project is licensed under [Your License Name Here]. See the LICENSE.md file
 
 For any inquiries or further discussion about the project, please reach out to:
 
-- **Email**: [your-email@example.com]
-- **LinkedIn**: [your-linkedin-profile-link]
-- **GitHub Profile**: [@YourGitHubUsername](https://github.com/YourGitHubUsername)
+- **GitHub Profile**: [@krpovmu](https://github.com/krpovmu)
