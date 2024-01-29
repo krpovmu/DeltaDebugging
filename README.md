@@ -97,7 +97,7 @@ For detailed information about the algorithms and methodologies used in this pro
 
 ## License
 
-This project is licensed under [Your License Name Here]. See the LICENSE.md file in the repository for detailed terms and conditions.
+This project is licensed under [MIT](https://opensource.org/license/mit/). See the LICENSE.md file in the repository for detailed terms and conditions.
 
 ## Contact
 
