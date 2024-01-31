@@ -23,9 +23,9 @@ public class AlloyManager<E> {
 
 		ArgumentParser parser = ArgumentParsers.newFor("DeltaDebugging").build().defaultHelp(true).description("Process a file passed as argument.");
 		parser.addArgument("-i", "--input").required(true).help("The file to process");
-		parser.addArgument("-f", "--facts").action(Arguments.storeTrue()).help("Analize errors in the model related with facts");
-		parser.addArgument("-p", "--predicates").action(Arguments.storeTrue()).help("Analize errors in the model related with predicates");
-		parser.addArgument("-t", "--trace").action(Arguments.storeTrue()).help("Print all analisis stack");
+		parser.addArgument("-f", "--facts").action(Arguments.storeTrue()).help("Analize facts errors in the alloy model");
+		parser.addArgument("-p", "--predicates").action(Arguments.storeTrue()).help("Analize predicates errors in the alloy model");
+		parser.addArgument("-t", "--trace").action(Arguments.storeTrue()).help("Print detailed stack of the process");
 
 		try {
 			Namespace res = parser.parseArgs(args);

@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <project name="DeltaDebugging" default="compile" basedir=".">
     <!-- Define project properties -->
+
+    <property name="version" value="0.1.0"/> 
+    <property name="dir.root" value="."/> 
+    <echo>#####################################################################</echo> 
+    <echo>#       Building ${ant.project.name} Version is ${version}</echo> 
+    <echo>#####################################################################</echo> 
     <property name="src.dir" value="src"/>
     <property name="build.dir" value="build"/>
     <property name="classes.dir" value="${build.dir}/classes"/>
@@ -22,6 +28,7 @@
     <!-- Compile the Java code -->
     <target name="compile" depends="clean, makedir">
         <javac srcdir="${src.dir}" destdir="${classes.dir}" includeantruntime="false">
+	<!--<compilerarg value="-Xlint"/>-->
             <classpath>
                 <fileset dir="${lib.dir}" includes="**/*.jar"/>
             </classpath>
@@ -30,7 +37,7 @@
 
     <!-- Create a JAR file -->
     <target name="jar" depends="compile">
-        <jar destfile="${jar.dir}/DeltaDebugging.jar" basedir="${classes.dir}">
+	    <jar destfile="${jar.dir}/DeltaDebugging-${version}.jar" basedir="${classes.dir}">
             <manifest>
                 <attribute name="Main-Class" value="${main-class}"/>
             </manifest>
@@ -40,7 +47,7 @@
 
     <!-- Run the application -->
     <target name="run" depends="jar">
-        <java jar="${jar.dir}/DeltaDebugging.jar" fork="true"/>
+	    <java jar="${jar.dir}/DeltaDebugging-${version}.jar" fork="true"/>
     </target>
 </project>
 
