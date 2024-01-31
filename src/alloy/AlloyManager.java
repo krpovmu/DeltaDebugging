@@ -21,7 +21,7 @@ public class AlloyManager<E> {
 
 	public static void main(String[] args) throws ArgumentParserException {
 
-		ArgumentParser parser = ArgumentParsers.newFor("FileProcessor").build().defaultHelp(true).description("Process a file passed as argument.");
+		ArgumentParser parser = ArgumentParsers.newFor("DeltaDebugging").build().defaultHelp(true).description("Process a file passed as argument.");
 		parser.addArgument("-i", "--input").required(true).help("The file to process");
 		parser.addArgument("-f", "--facts").action(Arguments.storeTrue()).help("Analize errors in the model related with facts");
 		parser.addArgument("-p", "--predicates").action(Arguments.storeTrue()).help("Analize errors in the model related with predicates");
