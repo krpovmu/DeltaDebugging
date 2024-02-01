@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -81,7 +82,8 @@ public class DDPlusTest<E> implements IDDPlusTest {
 				modifiedModel.append(line).append("\n");
 			}
 		}
-		return modifiedModel.toString();
+		String modifiedRun = createRunPredicateCommand(partListPredicates);
+		return (modifiedModel.toString()).replaceAll("(?m)^run\\s*\\{.*\\R?", modifiedRun);
 	}
 
 	public boolean lineIsPredicateToDelete(List<E> predicates, String line) {
@@ -90,7 +92,8 @@ public class DDPlusTest<E> implements IDDPlusTest {
 			Func funcPredicate = (Func) predicates.get(i);
 			String[] elementsNamePredicate = funcPredicate.label.toString().split("/");
 			String namePredicate = elementsNamePredicate[elementsNamePredicate.length - 1];
-			String regex = "\\bpred\\s+" + namePredicate + "\\s*\\(([^)]*)\\)\\s*\\{";
+			String regex = "\\bpred\\s+" + namePredicate + "\\s*(\\([^)]*\\))?\\s*\\{.*?\\}";
+			//String regex = "\\bpred\\s+" + namePredicate + "\\s*\\(([^)]*)\\)\\s*\\{";
 			// String regex = "\\bpred\\s+" + namePredicate + "\\s*\\(([^)]*)\\)\\s*\\{.*?\\}";
 			Pattern pattern = Pattern.compile(regex, Pattern.DOTALL);
 			Matcher matcher = pattern.matcher(line);
@@ -100,5 +103,18 @@ public class DDPlusTest<E> implements IDDPlusTest {
 			}
 		}
 		return isPredicateToDelete;
+	}
+
+	public String createRunPredicateCommand(List<E> partPredicateList) {
+
+		String listOfPredicates = new String();
+
+		for (E elem : partPredicateList) {
+			Func predicate = (Func) elem;
+			String[] nameofPredicate = predicate.label.toString().split("/");
+			String namePredicate = nameofPredicate[nameofPredicate.length - 1];
+			listOfPredicates += namePredicate.concat(" ");
+		}
+		return "run {".concat(listOfPredicates).concat("}");
 	}
 }
