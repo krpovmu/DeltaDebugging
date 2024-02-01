@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -93,7 +92,7 @@ public class DDPlusTest<E> implements IDDPlusTest {
 			String[] elementsNamePredicate = funcPredicate.label.toString().split("/");
 			String namePredicate = elementsNamePredicate[elementsNamePredicate.length - 1];
 			String regex = "\\bpred\\s+" + namePredicate + "\\s*(\\([^)]*\\))?\\s*\\{.*?\\}";
-			//String regex = "\\bpred\\s+" + namePredicate + "\\s*\\(([^)]*)\\)\\s*\\{";
+			// String regex = "\\bpred\\s+" + namePredicate + "\\s*\\(([^)]*)\\)\\s*\\{";
 			// String regex = "\\bpred\\s+" + namePredicate + "\\s*\\(([^)]*)\\)\\s*\\{.*?\\}";
 			Pattern pattern = Pattern.compile(regex, Pattern.DOTALL);
 			Matcher matcher = pattern.matcher(line);
