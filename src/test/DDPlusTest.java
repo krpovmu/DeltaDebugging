@@ -1,6 +1,8 @@
 package test;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.StringReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -81,7 +83,8 @@ public class DDPlusTest<E> implements IDDPlusTest {
 				modifiedModel.append(line).append("\n");
 			}
 		}
-		String modifiedRun = createRunPredicateCommand(partListPredicates);
+		String runOptions = getRunOptions(originalModel);
+		String modifiedRun = createRunPredicateCommand(partListPredicates, runOptions);
 		return (modifiedModel.toString()).replaceAll("(?m)^run\\s*\\{.*\\R?", modifiedRun);
 	}
 
@@ -92,11 +95,8 @@ public class DDPlusTest<E> implements IDDPlusTest {
 			String[] elementsNamePredicate = funcPredicate.label.toString().split("/");
 			String namePredicate = elementsNamePredicate[elementsNamePredicate.length - 1];
 			String regex = "\\bpred\\s+" + namePredicate + "\\s*(\\([^)]*\\))?\\s*\\{.*?\\}";
-			// String regex = "\\bpred\\s+" + namePredicate + "\\s*\\(([^)]*)\\)\\s*\\{";
-			// String regex = "\\bpred\\s+" + namePredicate + "\\s*\\(([^)]*)\\)\\s*\\{.*?\\}";
-			Pattern pattern = Pattern.compile(regex, Pattern.DOTALL);
-			Matcher matcher = pattern.matcher(line);
-			if (matcher.find()) {
+			Matcher matcherPred = findByRegex(regex, line);
+			if (matcherPred.find()) {
 				isPredicateToDelete = true;
 				break;
 			}
@@ -104,16 +104,39 @@ public class DDPlusTest<E> implements IDDPlusTest {
 		return isPredicateToDelete;
 	}
 
-	public String createRunPredicateCommand(List<E> partPredicateList) {
-
-		String listOfPredicates = new String();
-
+	public String createRunPredicateCommand(List<E> partPredicateList, String runOptions) {
+		String listOfPredicates = "";
 		for (E elem : partPredicateList) {
 			Func predicate = (Func) elem;
 			String[] nameofPredicate = predicate.label.toString().split("/");
 			String namePredicate = nameofPredicate[nameofPredicate.length - 1];
 			listOfPredicates += namePredicate.concat(" ");
 		}
-		return "run {".concat(listOfPredicates).concat("}");
+		return "run {".concat(listOfPredicates).concat("}" + runOptions);
+	}
+
+	public String getRunOptions(String originalModel) {
+		String runCommand = "";
+		try (BufferedReader reader = new BufferedReader(new StringReader(originalModel))) {
+			String line;
+			while ((line = reader.readLine()) != null) {
+				if (line.contains("run")) {
+					runCommand = line;
+					break; // Remove this line if you want to find all occurrences
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		String[] listRunCommand = runCommand.split("}");
+		String runOptions = listRunCommand[listRunCommand.length - 1];
+		return runOptions;
+	}
+
+	public Matcher findByRegex(String regex, String originalModel) {
+		Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);
+		Matcher matcher = pattern.matcher(originalModel);
+		return matcher;
 	}
 }
