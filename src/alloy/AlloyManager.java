@@ -43,35 +43,41 @@ public class AlloyManager<E> {
 
 			// System.out.println(dto.getFilePath());
 			if (validateFile(dto.getFilePath())) {
+				
+				// validate if the model is UNSAT
+				if (dto.isModelUNSAT()) {
+					
+					factsAndpredicates = getFactsOrPredicates(dto);
+					// System.out.println(factsAndpredicates);
 
-				factsAndpredicates = getFactsOrPredicates(dto);
-				// System.out.println(factsAndpredicates);
+					if (!factsAndpredicates.isEmpty()) {
+						for (Map.Entry<String, Object> element : factsAndpredicates.entrySet()) {
+							List<Object> cores = new ArrayList<Object>();
+							List<Object> valuesList = (List<Object>) element.getValue();
 
-				if (!factsAndpredicates.isEmpty()) {
-					for (Map.Entry<String, Object> element : factsAndpredicates.entrySet()) {
-						List<Object> cores = new ArrayList<Object>();
-						List<Object> valuesList = (List<Object>) element.getValue();
-
-						if (!valuesList.isEmpty()) {
-							if (dto.isTrace()) {
-								dto.sortList(valuesList);
-								dto.printNumericalOrderedList();
+							if (!valuesList.isEmpty()) {
+								if (dto.isTrace()) {
+									dto.sortList(valuesList);
+									dto.printNumericalOrderedList();
+								}
+								cores = AbstractDDPlus.dd(valuesList, dto);
+							} else {
+								System.out.println("Empty List Of " + element.getKey());
 							}
-							cores = AbstractDDPlus.dd(valuesList, dto);
-						} else {
-							System.out.println("Empty List Of " + element.getKey());
+
+							System.out.println("=======================");
+							System.out.println("\n" + printCore(cores));
+							System.out.println("=======================");
+
 						}
-
-						System.out.println("=======================");
-						System.out.println("\n" + printCore(cores));
-						System.out.println("=======================");
-
+					} else {
+						System.out.println("There are not elements to analyze, have a good day");
 					}
 				} else {
-					System.out.println("There are not elements to analyze, have a good day");
+					System.out.println("Invalid model, model is SAT");
 				}
 			} else {
-				System.out.println("Invalid");
+				System.out.println("Invalid file not found");
 			}
 		} catch (ArgumentParserException e) {
 			parser.handleError(e);

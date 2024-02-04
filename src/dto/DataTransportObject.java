@@ -11,6 +11,8 @@ import edu.mit.csail.sdg.ast.Command;
 import edu.mit.csail.sdg.ast.Module;
 import edu.mit.csail.sdg.parser.CompUtil;
 import edu.mit.csail.sdg.translator.A4Options;
+import edu.mit.csail.sdg.translator.A4Solution;
+import edu.mit.csail.sdg.translator.TranslateAlloyToKodkod;
 
 public class DataTransportObject {
 
@@ -127,7 +129,7 @@ public class DataTransportObject {
 
 	public String printCoreAsNumber(List<Object> input, int checkResult) {
 		List<Integer> coreId = elementsToID(input, this.listWithIds);
-		return "Iteration "+ this.getStep() +" : " + coreId + " Result: " + ((checkResult == 1) ? "PASS" : (checkResult == 0) ? "UNRESOLVED" : "FAIL");
+		return "Iteration " + this.getStep() + " : " + coreId + " Result: " + ((checkResult == 1) ? "PASS" : (checkResult == 0) ? "UNRESOLVED" : "FAIL");
 	}
 
 	public List<Integer> elementsToID(List<Object> input, Map<Integer, Object> sortedList) {
@@ -141,5 +143,19 @@ public class DataTransportObject {
 			}
 		}
 		return output;
+	}
+
+	public boolean isModelUNSAT() {
+		boolean isUNSAT = true;
+		try {
+			this.module = CompUtil.parseEverything_fromFile(this.reporter, null, this.filePath);
+			A4Solution ans = TranslateAlloyToKodkod.execute_command(this.reporter, this.module.getAllReachableSigs(), this.command, this.options);
+			if (ans.satisfiable()) {
+				isUNSAT = false;
+			}
+		} catch (Exception e) {
+			isUNSAT = true;
+		}
+		return isUNSAT;
 	}
 }
