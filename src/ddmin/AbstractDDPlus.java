@@ -8,6 +8,11 @@ import alloy.IDDPlusTest;
 import dto.DataTransportObject;
 import test.DDPlusTest;
 
+/**
+ * Implements delta debugging algorithms to identify minimal unsatisfiable subsets (MUS)
+ * within Alloy models. This abstract class provides the foundation for executing the delta
+ * debugging process, utilizing the IDDPlusTest interface for testing subsets of the model.
+ */
 public class AbstractDDPlus {
 
 	private static IDDPlusTest checkAlloy = new DDPlusTest();
@@ -15,12 +20,27 @@ public class AbstractDDPlus {
 	public static final int FAIL = -1;
 	public static final int UNRESOLVED = 0;
 
-	// Entry point for Algorithm 1
+    /**
+     * Starts the delta debugging algorithm by partitioning the input set and
+     * recursively narrowing down to identify the minimal unsatisfiable subset.
+     *
+     * @param input The list of objects (model elements) to be debugged.
+     * @param dto The DataTransportObject containing configuration and state for the debugging session.
+     * @return A list of objects representing the minimal unsatisfiable subset.
+     */
 	public static List<Object> dd(List<Object> input, DataTransportObject dto) {
 		return ddAux(input, new ArrayList<>(), dto);
 	}
 
-	// Auxiliary method for recursive calls in Algorithm 1
+    /**
+     * Auxiliary method for recursive delta debugging calls. It splits the input set, tests subsets,
+     * and combines results to find the minimal unsatisfiable subset.
+     *
+     * @param input The current subset of objects to test.
+     * @param r A list of objects that have been identified as relevant to the unsatisfiability.
+     * @param dto The DataTransportObject providing context and settings for the test.
+     * @return A list of objects representing a (more) minimal unsatisfiable subset.
+     */
 	private static List<Object> ddAux(List<Object> input, List<Object> r, DataTransportObject dto) {
 		if (input.size() == 1) {
 			return input; // Found the problematic subset
@@ -53,7 +73,13 @@ public class AbstractDDPlus {
 		}
 	}
 
-	// Partition the list into two subsets
+
+    /**
+     * Partitions the given list into two approximately equal subsets.
+     *
+     * @param c The list of objects to partition.
+     * @return A list containing two lists, each a subset of the original list.
+     */
 	private static List<List<Object>> partitionIntoTwoSubsets(List<Object> c) {
 		List<Object> c1 = new ArrayList<>();
 		List<Object> c2 = new ArrayList<>();
@@ -75,12 +101,44 @@ public class AbstractDDPlus {
 		return subsets;
 	}
 
-	// Entry point for Algorithm 2
+
+    /**
+     * Enhanced delta debugging algorithm that handles unresolved cases by increasing
+     * granularity and retesting subsets.
+     *
+     * @param input The list of objects (model elements) to be debugged.
+     * @param dto The DataTransportObject containing configuration and state for the debugging session.
+     * @return A list of objects representing the minimal unsatisfiable subset, considering unresolved cases.
+     */
 	private static List<Object> ddPlus(List<Object> input, DataTransportObject dto) {
 		return dd3(input, new ArrayList<>(), dto, 2);
 	}
 
-	// Method for Algorithm 2
+	/**
+	 * Performs a refined delta debugging algorithm to identify the minimal unsatisfiable subset (MUS)
+	 * within the given set of constraints or elements. The `dd3` method may implement an advanced version
+	 * of delta debugging that optimizes the search for MUS by iteratively partitioning the input set
+	 * and evaluating subsets for satisfiability. This method is designed to handle complex cases with
+	 * higher efficiency, possibly incorporating strategies to deal with dependencies or to accelerate
+	 * the convergence towards the MUS.
+	 * 
+	 * @param input A List of Objects representing the current subset of elements or constraints to be analyzed.
+	 *              This set is part of the Alloy model under investigation for unsatisfiability.
+	 * @param r A List of Objects that have been determined to be relevant in the context of the current
+	 *          debugging iteration. This list helps in refining the search and focusing on promising subsets.
+	 * @param dto The DataTransportObject that carries configuration settings, model information, and provides
+	 *            a mechanism for tracking and logging the analysis process. It may include options that affect
+	 *            the debugging strategy or the interpretation of results.
+	 * @param n An integer that represents the current depth or iteration in the recursive debugging process.
+	 *          It is used to control the recursion and may influence the partitioning strategy or termination
+	 *          conditions of the algorithm.
+	 * @return A List of Objects that represents the minimal unsatisfiable subset (MUS) found within the input set.
+	 *         This subset is the smallest collection of elements or constraints that, when considered together,
+	 *         render the Alloy model unsatisfiable.
+	 * @throws DebuggingException if an error occurs during the debugging process. This may include errors related
+	 *         to model manipulation, evaluation of satisfiability, or issues arising from the configuration
+	 *         settings provided through the DataTransportObject.
+	 */
 	private static List<Object> dd3(List<Object> input, List<Object> r, DataTransportObject dto, int n) {
 		if (input.size() == 1) {
 			return input; // Found the problematic subset
@@ -123,7 +181,13 @@ public class AbstractDDPlus {
 		return new ArrayList<>(); // Nothing left
 	}
 
-	// Partition the list into n subsets for Algorithm 2
+    /**
+     * Partitions the given list into n subsets for use in the ddPlus algorithm.
+     *
+     * @param c The list of objects to partition.
+     * @param n The desired number of subsets.
+     * @return A list of lists, where each inner list is a subset of the original list.
+     */
 	private static List<List<Object>> partitionIntoNSubsets(List<Object> c, int n) {
 		List<List<Object>> subsets = new ArrayList<>();
 		int subsetSize = (int) Math.ceil(c.size() / (double) n);
@@ -135,6 +199,13 @@ public class AbstractDDPlus {
 		return subsets;
 	}
 
+    /**
+     * Computes the difference between two lists of objects.
+     *
+     * @param a The first list.
+     * @param b The second list, whose elements will be removed from the first list.
+     * @return A list containing all elements of the first list that are not in the second list.
+     */
 	private static List<Object> difference(List<Object> a, List<Object> b) {
 		List<Object> result = new LinkedList<Object>();
 		result.addAll(a);

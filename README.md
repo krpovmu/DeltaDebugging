@@ -12,7 +12,7 @@ This Java project implements a delta debugging algorithm tailored for analyzing 
 
 ## Uml Model
 
-![uml diagram](./uml-diagram.png)
+![uml diagram](./diagram.png)
 
 ## Setup and Installation
 

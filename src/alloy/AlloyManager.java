@@ -17,8 +17,24 @@ import net.sourceforge.argparse4j.inf.ArgumentParser;
 import net.sourceforge.argparse4j.inf.ArgumentParserException;
 import net.sourceforge.argparse4j.inf.Namespace;
 
+/**
+ * The AlloyManager class orchestrates the delta debugging process for Alloy models.
+ * It parses command-line arguments to configure the debugging session, including
+ * selecting between analyzing facts or predicates and enabling trace mode for detailed output.
+ * It manages the execution of the debugging process, including file validation,
+ * checking model satisfiability, and extracting and analyzing the unsatisfiable core.
+ */
 public class AlloyManager<E> {
-
+	
+	/**
+     * Main method to start the delta debugging process.
+     * It initializes the debugging session based on command-line arguments, prepares
+     * the DataTransportObject with the necessary configurations, and triggers the
+     * debugging process to identify minimal unsatisfiable subsets.
+     *
+     * @param args Command-line arguments for configuring the debugging session.
+     * @throws ArgumentParserException if there is an error parsing the command-line arguments.
+     */
 	public static void main(String[] args) throws ArgumentParserException {
 
 		ArgumentParser parser = ArgumentParsers.newFor("DeltaDebugging").build().defaultHelp(true).description("Process a file passed as argument.");
@@ -43,10 +59,10 @@ public class AlloyManager<E> {
 
 			// System.out.println(dto.getFilePath());
 			if (validateFile(dto.getFilePath())) {
-				
+
 				// validate if the model is UNSAT
 				if (dto.isModelUNSAT()) {
-					
+
 					factsAndpredicates = getFactsOrPredicates(dto);
 					// System.out.println(factsAndpredicates);
 
@@ -83,7 +99,15 @@ public class AlloyManager<E> {
 			parser.handleError(e);
 		}
 	}
-
+	
+	 /**
+     * Extracts facts or predicates from the Alloy model based on the configured core type.
+     * This method segregates model elements into facts or predicates to be analyzed
+     * during the debugging process.
+     *
+     * @param dto The DataTransportObject containing configuration and model information.
+     * @return A LinkedHashMap with elements categorized as either facts or predicates.
+     */
 	public static LinkedHashMap<String, Object> getFactsOrPredicates(DataTransportObject dto) {
 
 		LinkedHashMap<String, Object> listElementsAlloyModel = new LinkedHashMap<String, Object>();
@@ -123,6 +147,14 @@ public class AlloyManager<E> {
 		return listElementsAlloyModel;
 	}
 
+    /**
+     * Generates a string representation of the unsatisfiable core elements for printing.
+     * This method formats the core elements extracted during the debugging process
+     * for user-friendly output.
+     *
+     * @param core The list of core elements identified as part of the unsatisfiable subset.
+     * @return A formatted string representation of the unsatisfiable core.
+     */
 	public static String printCore(List<Object> core) {
 		String result = "";
 		for (Object e : core) {
@@ -139,6 +171,12 @@ public class AlloyManager<E> {
 		return result;
 	}
 
+    /**
+     * Validates the given file path to ensure the file exists and is not a directory.
+     *
+     * @param filePath The path of the file to validate.
+     * @return true if the file exists and is valid, false otherwise.
+     */
 	public static boolean validateFile(String filePath) {
 		File file = new File(filePath);
 

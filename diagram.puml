@@ -47,4 +47,3 @@ AlloyManager ..> ddmin.AbstractDDPlus : uses >
 AlloyManager ..> dto.DataTransportObject : uses >
 DDPlusTest ..> dto.DataTransportObject : uses >
 @enduml
-
