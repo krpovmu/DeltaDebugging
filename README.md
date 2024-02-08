@@ -30,6 +30,14 @@ This Java project implements a delta debugging algorithm tailored for analyzing 
 
 2. If using an IDE, import the project into your IDE of choice.
 3. Ensure that Java JDK 11 or higher is set as the project's SDK.
+4. Run Ant execution command:
+```bash
+ant build
+```
+Building will start immediately. And in a moment, Ant is going to finish
+processing with a message ''BUILD SUCCESSFUL''. Means, actually, project 
+build is ready to be used.
+
 
 ## Running the Application
 
