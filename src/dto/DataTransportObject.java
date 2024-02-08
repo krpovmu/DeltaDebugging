@@ -216,7 +216,7 @@ public class DataTransportObject {
 	 * and referencing elements, especially when dealing with large or complex Alloy model components.
 	 * The numeric IDs can be used for sorting, identification, and display purposes.
 	 *
-	 * @param list The list of elements to assign numeric IDs to.
+	 * @param elements The list of elements to assign numeric IDs to.
 	 * @return A map associating each element with its assigned numeric ID.
 	 */
 	public static Map<Integer, Object> giveNumericIdsToList(List<Object> elements) {
@@ -236,7 +236,9 @@ public class DataTransportObject {
 	 * a concise way to represent and analyze the unsatisfiable core, especially when dealing with
 	 * large models or complex unsatisfiability scenarios.
 	 *
-	 * @param core The list of core elements identified as part of the unsatisfiable subset.
+	 * @param input The list of core elements identified as part of the subset which is analyzed.
+	 * @param checkResult The result of the analysis of that subset.
+	 * @return String message with the information about actual iteration number analyzed.
 	 */
 	public String printCoreAsNumber(List<Object> input, int checkResult) {
 		List<Integer> coreId = elementsToID(input, this.listWithIds);
