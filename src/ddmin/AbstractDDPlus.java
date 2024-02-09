@@ -135,9 +135,6 @@ public class AbstractDDPlus {
 	 * @return A List of Objects that represents the minimal unsatisfiable subset (MUS) found within the input set.
 	 *         This subset is the smallest collection of elements or constraints that, when considered together,
 	 *         render the Alloy model unsatisfiable.
-	 * @throws DebuggingException if an error occurs during the debugging process. This may include errors related
-	 *         to model manipulation, evaluation of satisfiability, or issues arising from the configuration
-	 *         settings provided through the DataTransportObject.
 	 */
 	private static List<Object> dd3(List<Object> input, List<Object> r, DataTransportObject dto, int n) {
 		if (input.size() == 1) {
