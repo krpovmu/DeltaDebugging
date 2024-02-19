@@ -33,5 +33,3 @@ do
     echo "$(basename "$JFR_FILE"),$CPUTime,$HeapUsage,$GC_TotalPauseTime,$ConcurrencyCost,$io_written,$io_written_duration,$io_read,$io_read_duration" >> "$OUTPUT_FILE"
 done
 
-# Use another script or manual analysis to generate the summary from the CSV
-
