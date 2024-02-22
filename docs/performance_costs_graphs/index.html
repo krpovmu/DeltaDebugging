@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Analysis Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        p, li {
+            line-height: 1.6;
+        }
+        ul {
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Performance Analysis Costs of DDmin Java Application</h1>
+        <p>This report provides a comprehensive overview of performance metrics across different models processed by DDMin application. The analysis covers various aspects including CPU time usage, heap memory usage, garbage collection impact, concurrency costs, and I/O operations.</p>
+
+        <h2>Graphs</h2>
+        <img src="performance_costs_graphs.png" alt="Performance Costs Analysis Graphs">
+
+        <h2>Graphs Overview</h2>
+        <ul>
+            <li><strong>CPU Time Usage (%):</strong> Shows the percentage of CPU time used by each model, helping to identify models that are more CPU-intensive.</li>
+            <li><strong>Heap Usage (MB):</strong> Displays the amount of heap memory used by each model in megabytes, indicating the memory footprint of the models.</li>
+            <li><strong>GC Total Pause Time (ms):</strong> Represents the total time in milliseconds that the application was paused for garbage collection, highlighting the impact of GC on application responsiveness.</li>
+            <li><strong>Concurrency Cost (ms):</strong> Illustrates the time spent in milliseconds waiting due to concurrency issues, such as lock contention, which can impact application performance.</li>
+            <li><strong>I/O Written Duration (ms) and I/O Read Duration (ms):</strong> Show the duration of I/O operations for writing and reading, respectively, in milliseconds, providing insight into the cost of I/O operations on performance.</li>
+        </ul>
+
+        <div class="footer">
+            <!--Report generated on <em></em>.<br>-->
+            <em>Martin Tippman - Carlos Poveda</em>
+        </div>
+    </div>
+</body>
+</html>
