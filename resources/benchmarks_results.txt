@@ -1,0 +1,987 @@
+./als_models/Classroom01.als
+[0,762s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,762s][info][jfr,startup] 
+[0,762s][info][jfr,startup] Use jcmd 1784312 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom01.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom01.als: pred this/inv5
+
+=======================
+./als_models/Classroom02.als
+[0,749s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,749s][info][jfr,startup] 
+[0,749s][info][jfr,startup] Use jcmd 1784359 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom02.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom02.als: pred this/inv5
+
+=======================
+./als_models/Classroom03.als
+[1,425s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[1,425s][info][jfr,startup] 
+[1,425s][info][jfr,startup] Use jcmd 1784421 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom03.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom03.als: pred this/inv5
+
+=======================
+./als_models/Classroom04.als
+[0,541s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,541s][info][jfr,startup] 
+[0,541s][info][jfr,startup] Use jcmd 1784494 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom04.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom04.als: pred this/inv5
+
+=======================
+./als_models/Classroom05.als
+[0,504s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,504s][info][jfr,startup] 
+[0,504s][info][jfr,startup] Use jcmd 1784614 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom05.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom05.als: pred this/inv5
+
+=======================
+./als_models/Classroom06.als
+[0,600s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,600s][info][jfr,startup] 
+[0,600s][info][jfr,startup] Use jcmd 1784663 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom06.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom06.als: pred this/inv5
+
+=======================
+./als_models/Classroom07.als
+[0,541s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,541s][info][jfr,startup] 
+[0,541s][info][jfr,startup] Use jcmd 1784724 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom07.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom07.als: pred this/inv5
+
+=======================
+./als_models/Classroom08.als
+[0,532s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,532s][info][jfr,startup] 
+[0,532s][info][jfr,startup] Use jcmd 1784768 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom08.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom08.als: pred this/inv5
+
+=======================
+./als_models/Classroom09.als
+[0,527s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,527s][info][jfr,startup] 
+[0,527s][info][jfr,startup] Use jcmd 1784820 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom09.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom09.als: pred this/inv5
+
+=======================
+./als_models/Classroom10.als
+[0,593s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,593s][info][jfr,startup] 
+[0,593s][info][jfr,startup] Use jcmd 1784864 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom10.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom10.als: pred this/inv5
+
+=======================
+./als_models/Classroom11.als
+[0,581s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,581s][info][jfr,startup] 
+[0,581s][info][jfr,startup] Use jcmd 1784916 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom11.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom11.als: pred this/inv5
+
+=======================
+./als_models/Classroom12.als
+[0,543s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,543s][info][jfr,startup] 
+[0,543s][info][jfr,startup] Use jcmd 1784966 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom12.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom12.als: pred this/inv5
+
+=======================
+./als_models/Classroom13.als
+[0,530s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,530s][info][jfr,startup] 
+[0,530s][info][jfr,startup] Use jcmd 1785014 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 52, column 1, filename=Classroom13.als: pred this/inv2
+Pred: line 68, column 1, filename=Classroom13.als: pred this/inv5
+
+=======================
+./als_models/Classroom14.als
+[0,573s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,573s][info][jfr,startup] 
+[0,573s][info][jfr,startup] Use jcmd 1785062 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom14.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom14.als: pred this/inv5
+
+=======================
+./als_models/Classroom15.als
+[0,559s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,559s][info][jfr,startup] 
+[0,559s][info][jfr,startup] Use jcmd 1785111 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom15.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom15.als: pred this/inv5
+
+=======================
+./als_models/Classroom16.als
+[0,576s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,576s][info][jfr,startup] 
+[0,576s][info][jfr,startup] Use jcmd 1785158 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 52, column 1, filename=Classroom16.als: pred this/inv2
+Pred: line 67, column 1, filename=Classroom16.als: pred this/inv5
+
+=======================
+./als_models/Classroom17.als
+[0,566s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,566s][info][jfr,startup] 
+[0,566s][info][jfr,startup] Use jcmd 1785207 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom17.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom17.als: pred this/inv5
+
+=======================
+./als_models/Classroom18.als
+[0,589s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,589s][info][jfr,startup] 
+[0,589s][info][jfr,startup] Use jcmd 1785254 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom18.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom18.als: pred this/inv5
+
+=======================
+./als_models/Classroom19.als
+[0,552s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,552s][info][jfr,startup] 
+[0,552s][info][jfr,startup] Use jcmd 1785298 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom19.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom19.als: pred this/inv5
+
+=======================
+./als_models/Classroom20.als
+[0,564s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,564s][info][jfr,startup] 
+[0,564s][info][jfr,startup] Use jcmd 1785345 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 46, column 1, filename=Classroom20.als: pred this/inv1
+Pred: line 61, column 1, filename=Classroom20.als: pred this/inv4
+
+=======================
+./als_models/Classroom21.als
+[0,542s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,542s][info][jfr,startup] 
+[0,542s][info][jfr,startup] Use jcmd 1785392 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 53, column 1, filename=Classroom21.als: pred this/inv2
+Pred: line 68, column 1, filename=Classroom21.als: pred this/inv5
+
+=======================
+./als_models/Classroom22.als
+[0,587s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,587s][info][jfr,startup] 
+[0,587s][info][jfr,startup] Use jcmd 1785436 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom22.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom22.als: pred this/inv5
+
+=======================
+./als_models/Classroom23.als
+[0,557s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,557s][info][jfr,startup] 
+[0,557s][info][jfr,startup] Use jcmd 1785483 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 52, column 1, filename=Classroom23.als: pred this/inv2
+Pred: line 70, column 1, filename=Classroom23.als: pred this/inv5
+
+=======================
+./als_models/Classroom24.als
+[0,556s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,556s][info][jfr,startup] 
+[0,556s][info][jfr,startup] Use jcmd 1785532 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 53, column 1, filename=Classroom24.als: pred this/inv2
+Pred: line 68, column 1, filename=Classroom24.als: pred this/inv5
+
+=======================
+./als_models/Classroom25.als
+[0,588s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,588s][info][jfr,startup] 
+[0,588s][info][jfr,startup] Use jcmd 1785579 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom25.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom25.als: pred this/inv5
+
+=======================
+./als_models/Classroom26.als
+[0,575s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,575s][info][jfr,startup] 
+[0,575s][info][jfr,startup] Use jcmd 1785626 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom26.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom26.als: pred this/inv5
+
+=======================
+./als_models/Classroom27.als
+[0,571s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,571s][info][jfr,startup] 
+[0,571s][info][jfr,startup] Use jcmd 1785675 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 52, column 1, filename=Classroom27.als: pred this/inv2
+Pred: line 70, column 1, filename=Classroom27.als: pred this/inv5
+
+=======================
+./als_models/Classroom28.als
+[0,560s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,560s][info][jfr,startup] 
+[0,560s][info][jfr,startup] Use jcmd 1785727 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom28.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom28.als: pred this/inv5
+
+=======================
+./als_models/Classroom29.als
+[0,554s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,554s][info][jfr,startup] 
+[0,554s][info][jfr,startup] Use jcmd 1785776 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom29.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom29.als: pred this/inv5
+
+=======================
+./als_models/Classroom30.als
+[0,563s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,563s][info][jfr,startup] 
+[0,563s][info][jfr,startup] Use jcmd 1785828 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom30.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom30.als: pred this/inv5
+
+=======================
+./als_models/Classroom31.als
+[0,592s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,592s][info][jfr,startup] 
+[0,592s][info][jfr,startup] Use jcmd 1785872 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom31.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom31.als: pred this/inv5
+
+=======================
+./als_models/Classroom32.als
+[0,565s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,565s][info][jfr,startup] 
+[0,565s][info][jfr,startup] Use jcmd 1785920 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 51, column 1, filename=Classroom32.als: pred this/inv2
+Pred: line 66, column 1, filename=Classroom32.als: pred this/inv5
+
+=======================
+./als_models/Classroom33.als
+[0,553s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,553s][info][jfr,startup] 
+[0,553s][info][jfr,startup] Use jcmd 1785972 JFR.dump name=1 to copy recording data to file.
+=======================
+
+
+=======================
+./als_models/file01.als
+[0,595s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,595s][info][jfr,startup] 
+[0,595s][info][jfr,startup] Use jcmd 1786006 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file01.als: pred this/inv1
+Pred: line 41, column 1, filename=file01.als: pred this/inv3
+
+=======================
+./als_models/file02.als
+[0,526s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,526s][info][jfr,startup] 
+[0,526s][info][jfr,startup] Use jcmd 1786047 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 33, column 1, filename=file02.als: pred this/inv1
+Pred: line 43, column 1, filename=file02.als: pred this/inv3
+
+=======================
+./als_models/file03.als
+[0,558s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,558s][info][jfr,startup] 
+[0,558s][info][jfr,startup] Use jcmd 1786089 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file03.als: pred this/inv1
+Pred: line 42, column 1, filename=file03.als: pred this/inv3
+
+=======================
+./als_models/file04.als
+[0,555s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,555s][info][jfr,startup] 
+[0,555s][info][jfr,startup] Use jcmd 1786134 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file04.als: pred this/inv1
+Pred: line 41, column 1, filename=file04.als: pred this/inv3
+
+=======================
+./als_models/file05.als
+[0,581s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,581s][info][jfr,startup] 
+[0,581s][info][jfr,startup] Use jcmd 1786176 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file05.als: pred this/inv1
+Pred: line 43, column 1, filename=file05.als: pred this/inv3
+
+=======================
+./als_models/file06.als
+[0,546s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,546s][info][jfr,startup] 
+[0,546s][info][jfr,startup] Use jcmd 1786221 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file06.als: pred this/inv1
+Pred: line 41, column 1, filename=file06.als: pred this/inv3
+
+=======================
+./als_models/file07.als
+[0,567s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,567s][info][jfr,startup] 
+[0,567s][info][jfr,startup] Use jcmd 1786262 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 33, column 1, filename=file07.als: pred this/inv1
+Pred: line 43, column 1, filename=file07.als: pred this/inv3
+
+=======================
+./als_models/file08.als
+[0,565s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,565s][info][jfr,startup] 
+[0,565s][info][jfr,startup] Use jcmd 1786306 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file08.als: pred this/inv1
+Pred: line 44, column 1, filename=file08.als: pred this/inv3
+
+=======================
+./als_models/file09.als
+[0,577s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,577s][info][jfr,startup] 
+[0,577s][info][jfr,startup] Use jcmd 1786351 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file09.als: pred this/inv1
+Pred: line 41, column 1, filename=file09.als: pred this/inv3
+
+=======================
+./als_models/file10.als
+[0,609s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,609s][info][jfr,startup] 
+[0,609s][info][jfr,startup] Use jcmd 1786393 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 12, column 1, filename=file10.als: pred this/inv1
+Pred: line 22, column 1, filename=file10.als: pred this/inv3
+
+=======================
+./als_models/file11.als
+[0,578s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,578s][info][jfr,startup] 
+[0,578s][info][jfr,startup] Use jcmd 1786437 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file11.als: pred this/inv1
+Pred: line 42, column 1, filename=file11.als: pred this/inv3
+
+=======================
+./als_models/file12.als
+[0,540s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,540s][info][jfr,startup] 
+[0,540s][info][jfr,startup] Use jcmd 1786482 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file12.als: pred this/inv1
+Pred: line 41, column 1, filename=file12.als: pred this/inv3
+
+=======================
+./als_models/file13.als
+[0,583s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,583s][info][jfr,startup] 
+[0,583s][info][jfr,startup] Use jcmd 1786524 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file13.als: pred this/inv1
+Pred: line 44, column 1, filename=file13.als: pred this/inv3
+
+=======================
+./als_models/file14.als
+[0,548s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,548s][info][jfr,startup] 
+[0,548s][info][jfr,startup] Use jcmd 1786566 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file14.als: pred this/inv1
+Pred: line 41, column 1, filename=file14.als: pred this/inv3
+
+=======================
+./als_models/file15.als
+[0,587s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,587s][info][jfr,startup] 
+[0,587s][info][jfr,startup] Use jcmd 1786608 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file15.als: pred this/inv1
+Pred: line 41, column 1, filename=file15.als: pred this/inv3
+
+=======================
+./als_models/file16.als
+[0,571s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,571s][info][jfr,startup] 
+[0,571s][info][jfr,startup] Use jcmd 1786650 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file16.als: pred this/inv1
+Pred: line 42, column 1, filename=file16.als: pred this/inv3
+
+=======================
+./als_models/file17.als
+[0,564s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,564s][info][jfr,startup] 
+[0,564s][info][jfr,startup] Use jcmd 1786695 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file17.als: pred this/inv1
+Pred: line 41, column 1, filename=file17.als: pred this/inv3
+
+=======================
+./als_models/file18.als
+[0,564s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,564s][info][jfr,startup] 
+[0,564s][info][jfr,startup] Use jcmd 1786737 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file18.als: pred this/inv1
+Pred: line 41, column 1, filename=file18.als: pred this/inv3
+
+=======================
+./als_models/file19.als
+[0,576s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,576s][info][jfr,startup] 
+[0,576s][info][jfr,startup] Use jcmd 1786779 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 41, column 1, filename=file19.als: pred this/inv3
+Pred: line 46, column 1, filename=file19.als: pred this/inv4
+Pred: line 51, column 1, filename=file19.als: pred this/inv5
+
+=======================
+./als_models/file20.als
+[0,564s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,564s][info][jfr,startup] 
+[0,564s][info][jfr,startup] Use jcmd 1786823 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file20.als: pred this/inv1
+Pred: line 41, column 1, filename=file20.als: pred this/inv3
+
+=======================
+./als_models/file21.als
+[0,545s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,545s][info][jfr,startup] 
+[0,545s][info][jfr,startup] Use jcmd 1786867 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file21.als: pred this/inv1
+Pred: line 41, column 1, filename=file21.als: pred this/inv3
+
+=======================
+./als_models/file22.als
+[0,558s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,558s][info][jfr,startup] 
+[0,558s][info][jfr,startup] Use jcmd 1786912 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=file22.als: pred this/inv1
+Pred: line 41, column 1, filename=file22.als: pred this/inv3
+
+=======================
+./als_models/file23.als
+[0,551s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,551s][info][jfr,startup] 
+[0,551s][info][jfr,startup] Use jcmd 1786956 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 29, column 1, filename=file23.als: pred this/inv1
+Pred: line 39, column 1, filename=file23.als: pred this/inv3
+
+=======================
+./als_models/file24.als
+[0,559s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,559s][info][jfr,startup] 
+[0,559s][info][jfr,startup] Use jcmd 1786995 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 29, column 1, filename=file24.als: pred this/inv1
+Pred: line 39, column 1, filename=file24.als: pred this/inv3
+
+=======================
+./als_models/file25.als
+[0,555s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,555s][info][jfr,startup] 
+[0,555s][info][jfr,startup] Use jcmd 1787037 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 29, column 1, filename=file25.als: pred this/inv1
+Pred: line 39, column 1, filename=file25.als: pred this/inv3
+
+=======================
+./als_models/file26.als
+[0,566s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,566s][info][jfr,startup] 
+[0,566s][info][jfr,startup] Use jcmd 1787079 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 29, column 1, filename=file26.als: pred this/inv1
+Pred: line 39, column 1, filename=file26.als: pred this/inv3
+
+=======================
+./als_models/file27.als
+[0,540s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,540s][info][jfr,startup] 
+[0,540s][info][jfr,startup] Use jcmd 1787121 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 29, column 1, filename=file27.als: pred this/inv1
+Pred: line 39, column 1, filename=file27.als: pred this/inv3
+
+=======================
+./als_models/file28.als
+[0,622s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,622s][info][jfr,startup] 
+[0,622s][info][jfr,startup] Use jcmd 1787160 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 29, column 1, filename=file28.als: pred this/inv1
+Pred: line 44, column 1, filename=file28.als: pred this/inv3
+
+=======================
+./als_models/file29.als
+[0,545s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,545s][info][jfr,startup] 
+[0,545s][info][jfr,startup] Use jcmd 1787202 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 29, column 1, filename=file29.als: pred this/inv1
+Pred: line 39, column 1, filename=file29.als: pred this/inv3
+
+=======================
+./als_models/file30.als
+[0,543s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,543s][info][jfr,startup] 
+[0,543s][info][jfr,startup] Use jcmd 1787244 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 29, column 1, filename=file30.als: pred this/inv1
+Pred: line 39, column 1, filename=file30.als: pred this/inv3
+
+=======================
+./als_models/file31.als
+[0,602s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,602s][info][jfr,startup] 
+[0,602s][info][jfr,startup] Use jcmd 1787286 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 29, column 1, filename=file31.als: pred this/inv1
+Pred: line 39, column 1, filename=file31.als: pred this/inv3
+
+=======================
+./als_models/file32.als
+[0,625s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,625s][info][jfr,startup] 
+[0,625s][info][jfr,startup] Use jcmd 1787324 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 29, column 1, filename=file32.als: pred this/inv1
+Pred: line 39, column 1, filename=file32.als: pred this/inv3
+
+=======================
+./als_models/file33.als
+[0,587s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,587s][info][jfr,startup] 
+[0,587s][info][jfr,startup] Use jcmd 1787365 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 29, column 1, filename=file33.als: pred this/inv1
+Pred: line 44, column 1, filename=file33.als: pred this/inv3
+
+=======================
+./als_models/file34.als
+[0,556s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,556s][info][jfr,startup] 
+[0,556s][info][jfr,startup] Use jcmd 1787406 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 29, column 1, filename=file34.als: pred this/inv1
+Pred: line 39, column 1, filename=file34.als: pred this/inv3
+
+=======================
+./als_models/file35.als
+[0,551s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,551s][info][jfr,startup] 
+[0,551s][info][jfr,startup] Use jcmd 1787449 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 29, column 1, filename=file35.als: pred this/inv1
+Pred: line 39, column 1, filename=file35.als: pred this/inv3
+
+=======================
+./als_models/graph01.als
+[0,587s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,587s][info][jfr,startup] 
+[0,587s][info][jfr,startup] Use jcmd 1787491 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 60, column 1, filename=graph01.als: pred this/stonglyConnected
+
+=======================
+./als_models/graph02.als
+[0,583s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,583s][info][jfr,startup] 
+[0,583s][info][jfr,startup] Use jcmd 1787528 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 12, column 1, filename=graph02.als: pred this/undirected
+Pred: line 20, column 1, filename=graph02.als: pred this/oriented
+
+=======================
+./als_models/graph03.als
+[0,553s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,553s][info][jfr,startup] 
+[0,553s][info][jfr,startup] Use jcmd 1787569 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 45, column 1, filename=graph03.als: pred this/noLoops
+
+=======================
+./als_models/graph04.als
+[0,571s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,571s][info][jfr,startup] 
+[0,571s][info][jfr,startup] Use jcmd 1787609 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 12, column 1, filename=graph04.als: pred this/undirected
+Pred: line 21, column 1, filename=graph04.als: pred this/oriented
+
+=======================
+./als_models/graph05.als
+[0,576s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,576s][info][jfr,startup] 
+[0,576s][info][jfr,startup] Use jcmd 1787647 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 20, column 1, filename=graph05.als: pred this/oriented
+Pred: line 29, column 1, filename=graph05.als: pred this/acyclic
+
+=======================
+./als_models/graph06.als
+[0,568s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,568s][info][jfr,startup] 
+[0,568s][info][jfr,startup] Use jcmd 1787689 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 12, column 1, filename=graph06.als: pred this/undirected
+Pred: line 20, column 1, filename=graph06.als: pred this/oriented
+
+=======================
+./als_models/graph07.als
+[0,592s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,592s][info][jfr,startup] 
+[0,592s][info][jfr,startup] Use jcmd 1787730 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 12, column 1, filename=graph07.als: pred this/undirected
+Pred: line 21, column 1, filename=graph07.als: pred this/oriented
+Pred: line 29, column 1, filename=graph07.als: pred this/acyclic
+
+=======================
+./als_models/graph08.als
+[0,565s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,565s][info][jfr,startup] 
+[0,565s][info][jfr,startup] Use jcmd 1787775 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 69, column 1, filename=graph08.als: pred this/transitive
+
+=======================
+./als_models/houses.als
+[0,542s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,542s][info][jfr,startup] 
+[0,542s][info][jfr,startup] Use jcmd 1787812 JFR.dump name=1 to copy recording data to file.
+Empty List Of Predicates
+=======================
+
+
+=======================
+./als_models/train.als
+[0,561s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,561s][info][jfr,startup] 
+[0,561s][info][jfr,startup] Use jcmd 1787849 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 18, column 1, filename=train.als: pred this/conf1
+Pred: line 26, column 1, filename=train.als: pred this/conf2
+
+=======================
+./als_models/trashltl01.als
+[0,551s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,551s][info][jfr,startup] 
+[0,551s][info][jfr,startup] Use jcmd 1787900 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 25, column 1, filename=trashltl01.als: pred this/prop2
+Pred: line 30, column 1, filename=trashltl01.als: pred this/prop3
+
+=======================
+./als_models/trashltl02.als
+[0,581s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,581s][info][jfr,startup] 
+[0,581s][info][jfr,startup] Use jcmd 1787947 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 26, column 1, filename=trashltl02.als: pred this/prop2
+Pred: line 33, column 1, filename=trashltl02.als: pred this/prop3
+
+=======================
+./als_models/trashltl03.als
+[0,575s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,575s][info][jfr,startup] 
+[0,575s][info][jfr,startup] Use jcmd 1787991 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 25, column 1, filename=trashltl03.als: pred this/prop2
+Pred: line 30, column 1, filename=trashltl03.als: pred this/prop3
+
+=======================
+./als_models/trashltl04.als
+[0,568s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,568s][info][jfr,startup] 
+[0,568s][info][jfr,startup] Use jcmd 1788037 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 27, column 1, filename=trashltl04.als: pred this/prop2
+Pred: line 33, column 1, filename=trashltl04.als: pred this/prop3
+
+=======================
+./als_models/trashltl05.als
+[0,535s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,535s][info][jfr,startup] 
+[0,535s][info][jfr,startup] Use jcmd 1788083 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 25, column 1, filename=trashltl05.als: pred this/prop2
+Pred: line 30, column 1, filename=trashltl05.als: pred this/prop3
+
+=======================
+./als_models/trashltl06.als
+[0,551s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,551s][info][jfr,startup] 
+[0,551s][info][jfr,startup] Use jcmd 1788127 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 30, column 1, filename=trashltl06.als: pred this/prop3
+Pred: line 40, column 1, filename=trashltl06.als: pred this/prop5
+
+=======================
+./als_models/trashltl07.als
+[0,566s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,566s][info][jfr,startup] 
+[0,566s][info][jfr,startup] Use jcmd 1788191 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=trashltl07.als: pred this/prop3
+Pred: line 41, column 1, filename=trashltl07.als: pred this/prop5
+
+=======================
+./als_models/trashltl08.als
+[0,559s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,559s][info][jfr,startup] 
+[0,559s][info][jfr,startup] Use jcmd 1788255 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 27, column 1, filename=trashltl08.als: pred this/prop2
+Pred: line 33, column 1, filename=trashltl08.als: pred this/prop3
+
+=======================
+./als_models/trashltl09.als
+[0,572s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,572s][info][jfr,startup] 
+[0,572s][info][jfr,startup] Use jcmd 1788301 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 26, column 1, filename=trashltl09.als: pred this/prop2
+Pred: line 31, column 1, filename=trashltl09.als: pred this/prop3
+
+=======================
+./als_models/trashltl10.als
+[0,552s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,552s][info][jfr,startup] 
+[0,552s][info][jfr,startup] Use jcmd 1788348 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 25, column 1, filename=trashltl10.als: pred this/prop2
+Pred: line 30, column 1, filename=trashltl10.als: pred this/prop3
+
+=======================
+./als_models/trashltl11.als
+[0,546s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,546s][info][jfr,startup] 
+[0,546s][info][jfr,startup] Use jcmd 1788393 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 26, column 1, filename=trashltl11.als: pred this/prop2
+Pred: line 33, column 1, filename=trashltl11.als: pred this/prop3
+
+=======================
+./als_models/trashltl12.als
+[0,543s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,543s][info][jfr,startup] 
+[0,543s][info][jfr,startup] Use jcmd 1788436 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 25, column 1, filename=trashltl12.als: pred this/prop2
+
+=======================
+./als_models/trashltl13.als
+[0,558s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,558s][info][jfr,startup] 
+[0,558s][info][jfr,startup] Use jcmd 1788480 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 25, column 1, filename=trashltl13.als: pred this/prop2
+Pred: line 30, column 1, filename=trashltl13.als: pred this/prop3
+
+=======================
+./als_models/trashltl14.als
+[0,567s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,567s][info][jfr,startup] 
+[0,567s][info][jfr,startup] Use jcmd 1788527 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 25, column 1, filename=trashltl14.als: pred this/prop2
+Pred: line 30, column 1, filename=trashltl14.als: pred this/prop3
+
+=======================
+./als_models/trashltl15.als
+[0,575s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,575s][info][jfr,startup] 
+[0,575s][info][jfr,startup] Use jcmd 1788583 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 25, column 1, filename=trashltl15.als: pred this/prop2
+Pred: line 30, column 1, filename=trashltl15.als: pred this/prop3
+
+=======================
+./als_models/trashltl16.als
+[0,565s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,565s][info][jfr,startup] 
+[0,565s][info][jfr,startup] Use jcmd 1788629 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 26, column 1, filename=trashltl16.als: pred this/prop2
+Pred: line 32, column 1, filename=trashltl16.als: pred this/prop3
+
+=======================
+./als_models/trashltl17.als
+[0,573s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,573s][info][jfr,startup] 
+[0,573s][info][jfr,startup] Use jcmd 1788673 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 27, column 1, filename=trashltl17.als: pred this/prop2
+Pred: line 33, column 1, filename=trashltl17.als: pred this/prop3
+
+=======================
+./als_models/trashltl18.als
+[0,555s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,555s][info][jfr,startup] 
+[0,555s][info][jfr,startup] Use jcmd 1788720 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 26, column 1, filename=trashltl18.als: pred this/prop2
+Pred: line 31, column 1, filename=trashltl18.als: pred this/prop3
+
+=======================
+./als_models/trashltl19.als
+[0,550s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,550s][info][jfr,startup] 
+[0,550s][info][jfr,startup] Use jcmd 1788767 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 26, column 1, filename=trashltl19.als: pred this/prop2
+Pred: line 32, column 1, filename=trashltl19.als: pred this/prop3
+
+=======================
+./als_models/trashltl20.als
+[0,571s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,571s][info][jfr,startup] 
+[0,571s][info][jfr,startup] Use jcmd 1788810 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 27, column 1, filename=trashltl20.als: pred this/prop2
+Pred: line 33, column 1, filename=trashltl20.als: pred this/prop3
+
+=======================
+./als_models/worker.als
+[0,555s][info][jfr,startup] Started recording 1. No limit specified, using maxsize=250MB as default.
+[0,555s][info][jfr,startup] 
+[0,555s][info][jfr,startup] Use jcmd 1788857 JFR.dump name=1 to copy recording data to file.
+=======================
+
+Pred: line 31, column 1, filename=worker.als: pred this/inv2
+Pred: line 37, column 1, filename=worker.als: pred this/inv3
+Pred: line 63, column 1, filename=worker.als: pred this/inv8
+Pred: line 81, column 1, filename=worker.als: pred this/contradiction
+
+=======================
