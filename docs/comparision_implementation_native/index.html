@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Analysis Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        p, li {
+            line-height: 1.6;
+        }
+        ul {
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Benchmarks DDmin Implementation vs Native (Alloy Minisat UNSAT Core)</h1>
+        <p>This report gives a detailed look at performance measurements from tests done on 100 UNSAT alloy models, using the DeltaDebugging Java application. The analysis of cost performance during the tests covers various aspects including CPU time usage, heap memory usage, garbage collection impact, concurrency costs, and I/O operations.</p>
+
+        <h2>Performance</h2>
+        <p>The first graph compares the execution times between the custom implementation and the native tool for each model. You can observe how each pair of bars represent a model, allowing you to compare directly the performance of both implementations.</p>
+        <img src="execution_time_graph.png" alt="Execution times">
+
+        <h2>Correctness</h2>
+        <p>The second graph shows the correctness of the custom implementation compared to the native tool's results. A model's result is considered "correct" if the outcomes from both implementations match. The bars represent the count of models where the custom implementation was correct versus incorrect.</p>
+        <img src="correctness_graph.png" alt="Correctness">
+
+        <div class="footer">
+            <!--Report generated on <em></em>.<br>-->
+            <em>Martin Tippman - Carlos Poveda</em>
+        </div>
+    </div>
+</body>
+</html>
